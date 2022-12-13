@@ -40,8 +40,8 @@ export class TrainingheadAddStudentsComponent implements OnInit {
     course: new FormControl("", [Validators.required]),
     batch:new FormControl("", [Validators.required]),
     program:new FormControl("", [Validators.required]),
-    training_head:new FormControl("", [Validators.required]),
-    placement_officer:new FormControl("", [Validators.required]),
+    // training_head:new FormControl("", [Validators.required]),
+    // placement_officer:new FormControl("", [Validators.required]),
     employment_status:new FormControl("", [Validators.required]),
     course_status:new FormControl("", [Validators.required])
 

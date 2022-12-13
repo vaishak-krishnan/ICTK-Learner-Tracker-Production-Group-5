@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/auth.service';
+// fontawesome
+import {faFile} from '@fortawesome/free-regular-svg-icons'
+import {faPlusSquare} from '@fortawesome/free-regular-svg-icons'
+import {faEdit} from '@fortawesome/free-regular-svg-icons'
+import {faWindowClose} from '@fortawesome/free-regular-svg-icons'
+
 
 
 @Component({
@@ -19,6 +25,12 @@ export class TrainingheadListComponent implements OnInit {
   tableSize: number = 6;
   filterTerm!: string;
   i=0;
+
+    // fontawesome
+    faFile = faFile;
+    faPlusSquare = faPlusSquare;
+    faWindowClose = faWindowClose;
+    faEdit = faEdit;
 
   constructor(private apiService: ApiService,  private router: Router, public auth: AuthService) { }
 

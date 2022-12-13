@@ -63,7 +63,6 @@ export class PlacementofficerEditStudentsComponent implements OnInit {
       training_head: new FormControl({ value: '', disabled: true }, [Validators.required]),
       placement_officer: new FormControl({ value: '', disabled: true }, [Validators.required]),
       course_status: new FormControl({ value: '', disabled: true }, [Validators.required]),
-      // no disbale for employment status 
       employment_status: new FormControl("", [Validators.required]),
 
     })

@@ -2,6 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api.service';
 import { Router } from '@angular/router';
 
+// fontawesome
+import {faFile} from '@fortawesome/free-regular-svg-icons'
+import {faPlusSquare} from '@fortawesome/free-regular-svg-icons'
+import {faEdit} from '@fortawesome/free-regular-svg-icons'
+import {faWindowClose} from '@fortawesome/free-regular-svg-icons'
+
 @Component({
   selector: 'app-traininghead-landing',
   templateUrl: './traininghead-landing.component.html',
@@ -16,6 +22,12 @@ export class TrainingheadLandingComponent implements OnInit {
   count: number = 0;
   tableSize: number = 6;
   filterTerm!: string;
+
+    // fontawesome
+    faFile = faFile;
+    faPlusSquare = faPlusSquare;
+    faWindowClose = faWindowClose;
+    faEdit = faEdit;
 
   constructor(private apiService: ApiService,  private router: Router) { }
 

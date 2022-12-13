@@ -35,6 +35,7 @@ import { UserEditComponent } from './components/user-edit/user-edit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CsvfileuploadComponent } from './components/csvfileupload/csvfileupload.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -74,7 +75,8 @@ import { CsvfileuploadComponent } from './components/csvfileupload/csvfileupload
     NgxPaginationModule,
     Ng2SearchPipeModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    FontAwesomeModule
 
 
   ],

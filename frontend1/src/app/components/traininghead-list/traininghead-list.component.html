@@ -8,7 +8,7 @@
     <div class="  ">
         <div class="pt-5 pb-5">
             <div class=" pb-5">
-                <button class="btn btn-primary" routerLink="/user-add">Add Users</button>
+                <button class="btn btn-primary" routerLink="/user-add">  Add Users</button>
             </div>
 
             <div class="search-box pb-3">
@@ -30,7 +30,8 @@
                         <th scope="col"></th>
                     </tr>
                 </thead>
-                <tr *ngFor="let user of users |paginate:
+                <tbody>
+                    <tr *ngFor="let user of users |paginate:
                 { itemsPerPage: tableSize,
                    currentPage: page,
                    totalItems: count
@@ -41,9 +42,25 @@
                     <td>{{user.course}}</td>
                     <td>{{user.office_location}}</td>
                     <td>{{user.user_type}}</td>
-                    <th scope="col"><button class="btn btn-warning" type="button" (click)="edituser(user._id)">Edit</button></th>
-                    <th scope="col"><button class="btn btn-danger" type="button" (click)="deleteuser(user._id)">Delete</button></th>
-                </tr>
+                    <td ><button class="btn btn-warning" type="button" (click)="edituser(user._id)"><fa-icon [icon]="faEdit"> </fa-icon></button></td>
+                    <td ><button class="btn btn-danger" type="button" (click)="deleteuser(user._id)"><fa-icon [icon]="faWindowClose"></fa-icon></button></td>
+                </tr> 
+                </tbody>
+          
+                <!-- <tr *ngFor="let user of users |paginate:
+                { itemsPerPage: tableSize,
+                   currentPage: page,
+                   totalItems: count
+                 } | filter: filterTerm  ">
+                    <td>{{user.user_name}}</td>
+                    <td>{{user.email_id}}</td>
+                    <td>{{user.contact_number}}</td>
+                    <td>{{user.course}}</td>
+                    <td>{{user.office_location}}</td>
+                    <td>{{user.user_type}}</td>
+                    <td ><button class="btn btn-warning" type="button" (click)="edituser(user._id)">Edit</button></td>
+                    <td ><button class="btn btn-danger" type="button" (click)="deleteuser(user._id)">Delete</button></td>
+                </tr> -->
             </table>
         </div>
     </div>

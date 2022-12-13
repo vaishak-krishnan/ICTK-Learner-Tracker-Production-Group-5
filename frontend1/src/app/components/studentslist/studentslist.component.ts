@@ -5,6 +5,11 @@ import { MatDialog, MatDialogConfig} from '@angular/material/dialog';
 
 import { AddstudentsComponent } from '../addstudents/addstudents.component';
 import { CsvfileuploadComponent } from '../csvfileupload/csvfileupload.component';
+import {faFile} from '@fortawesome/free-regular-svg-icons'
+import {faPlusSquare} from '@fortawesome/free-regular-svg-icons'
+import {faEdit} from '@fortawesome/free-regular-svg-icons'
+import {faWindowClose} from '@fortawesome/free-regular-svg-icons'
+
 
 
 @Component({
@@ -21,6 +26,11 @@ export class StudentslistComponent implements OnInit {
   count: number = 0;
   tableSize: number = 6;
   filterTerm!: string;
+  faFile = faFile;
+  faPlusSquare = faPlusSquare;
+  faWindowClose = faWindowClose;
+  faEdit = faEdit;
+
 
 
   constructor(private apiService: ApiService,  private router: Router,private dialog: MatDialog,) { }

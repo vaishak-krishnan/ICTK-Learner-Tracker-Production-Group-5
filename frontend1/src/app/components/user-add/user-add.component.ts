@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { ApiService } from 'src/app/api.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import {faFile} from '@fortawesome/free-regular-svg-icons'
+import {faPlusSquare} from '@fortawesome/free-regular-svg-icons'
+import {faEdit} from '@fortawesome/free-regular-svg-icons'
+import {faWindowClose} from '@fortawesome/free-regular-svg-icons'
 
 @Component({
   selector: 'app-user-add',
@@ -12,6 +16,12 @@ export class UserAddComponent implements OnInit {
 
   courses : any = [];
   users : any = [];
+
+  // fontawesome
+  faFile = faFile;
+  faPlusSquare = faPlusSquare;
+  faWindowClose = faWindowClose;
+  faEdit = faEdit;
   
 
   constructor(  private apiService: ApiService,
